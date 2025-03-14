@@ -1,0 +1,405 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the egghead package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: egghead\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-04 21:57-0300\n"
+"PO-Revision-Date: 2025-03-14 22:04+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#: data/io.github.josephmawa.Egghead.desktop.in:2
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:7 src/ui/window.ui:6
+msgid "Egghead"
+msgstr "Bolleboos"
+
+#. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
+#: data/io.github.josephmawa.Egghead.desktop.in:9
+msgid "Trivia;Quiz;Learn;Knowledge;Education;Recreation;"
+msgstr "Trivia;Quiz;Leren;Kennis;Educatie;Ontspanning;"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:8
+msgid "Learn while having fun"
+msgstr "Maak leren leuk"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:10
+msgid "A simple trivia app to enjoy in your free time"
+msgstr "Een eenvoudige trivia-app waarmee je je kennis kunt testen"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:11
+msgid "Below are the main features of Egghead:"
+msgstr "Dit zijn de mogelijkheden van de app:"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:13
+msgid "Download quiz"
+msgstr "Download quizzen;"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:14
+msgid "Save downloaded quiz"
+msgstr "Bewaar gedownloade quizzen;"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:15
+msgid "Delete saved quiz"
+msgstr "Verwijder bewaarde quizzen;"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:16
+msgid "Switch to dark, light, or system mode"
+msgstr "Kies voor het lichte, donkere of systeemthema."
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:21
+msgid "Joseph Mawa"
+msgstr "Joseph Mawa"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:59
+msgid "Egghead difficulty view in light mode"
+msgstr "Bolleboos-moeilijkheidsgraadkeuze (licht thema)"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:63
+msgid "Egghead difficulty view in dark mode"
+msgstr "Bolleboos-moeilijkheidsgraadkeuze (donker thema)"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:67
+msgid "Egghead quiz view in light mode"
+msgstr "Bolleboos-quizscherm (licht thema)"
+
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:71
+msgid "Egghead quiz view in dark mode"
+msgstr "Bolleboos-quizscherm (donker thema)"
+
+#: src/preferences.js:9 src/ui/window.ui:192
+msgid "Mixed"
+msgstr "Afwisselen"
+
+#: src/preferences.js:13 src/ui/window.ui:206
+msgid "Easy"
+msgstr "Makkelijk"
+
+#: src/preferences.js:17 src/ui/window.ui:220
+msgid "Medium"
+msgstr "Gemiddeld"
+
+#: src/preferences.js:21 src/ui/window.ui:234
+msgid "Hard"
+msgstr "Moeilijk"
+
+#: src/window.js:230
+msgid "Cancel Download"
+msgstr "Downloaden afbreken"
+
+#: src/window.js:231
+msgid "Are you sure you want to cancel this download?"
+msgstr "Weet je zeker dat je het downloaden wilt afbreken?"
+
+#: src/window.js:237 src/window.js:455
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: src/window.js:238 src/window.js:286 src/window.js:456
+msgid "Close"
+msgstr "Sluiten"
+
+#: src/window.js:276 src/ui/preferences.ui:93
+msgid "Delete Saved Quiz"
+msgstr "Bewaarde quiz verwijderen"
+
+#: src/window.js:278
+msgid ""
+"Are you sure you want to delete all the saved quiz? This action is "
+"irreversible."
+msgstr ""
+"Weet je zeker dat je de bewaarde quiz wilt verwijderen? Deze actie is "
+"onomkeerbaar."
+
+#: src/window.js:285
+msgid "Delete"
+msgstr "Verwĳderen"
+
+#: src/window.js:323
+msgid "Deleted saved quiz"
+msgstr "Bewaarde quiz verwijderen"
+
+#: src/window.js:448
+msgid "Quiz in session"
+msgstr "Middenin quiz"
+
+#: src/window.js:449
+msgid "Are you sure you want to cancel this quiz?"
+msgstr "Weet je zeker dat je wilt stoppen met de quiz?"
+
+#: src/window.js:841
+msgid "Failed to save metadata"
+msgstr "De metagegevens kunnen niet worden bewaard"
+
+#: src/window.js:873
+msgid "Failed to read saved data"
+msgstr "De gegevens kunnen niet worden ingelezen"
+
+#: src/window.js:895
+msgid "Successfully saved quiz to file"
+msgstr "De quiz is opgeslagen"
+
+#: src/window.js:898
+msgid "Failed to save quiz to file"
+msgstr "De quiz kan niet worden opgeslagen"
+
+#: src/window.js:904
+msgid "An error occurred while creating directory"
+msgstr "Er is een fout opgetreden tijdens het maken van de map"
+
+#: src/window.js:915
+#, javascript-format
+msgid "%s doesn't exist"
+msgstr "‘%s’ bestaat niet"
+
+#: src/window.js:924 src/window.js:931 src/window.js:938
+#, javascript-format
+msgid "Deleted %s successfully"
+msgstr "‘%s’ is verwijderd"
+
+#: src/ui/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Algemeen"
+
+#: src/ui/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Menu tonen/verbergen"
+
+#: src/ui/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr "Voorkeuren openen"
+
+#: src/ui/help-overlay.ui:26
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Sneltoetsen tonen"
+
+#: src/ui/help-overlay.ui:32
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/ui/help-overlay.ui:40
+msgctxt "shortcut window"
+msgid "Categories"
+msgstr "Categorieën"
+
+#: src/ui/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "Toggle Sidebar"
+msgstr "Zĳbalk tonen/verbergen"
+
+#: src/ui/help-overlay.ui:49
+msgctxt "shortcut window"
+msgid "Search Categories"
+msgstr "Zoeken naar categorieën"
+
+#: src/ui/help-overlay.ui:57
+msgctxt "shortcut window"
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: src/ui/help-overlay.ui:60
+msgctxt "shortcut window"
+msgid "Back"
+msgstr "Terug"
+
+#: src/ui/help-overlay.ui:68
+msgctxt "shortcut window"
+msgid "Quiz"
+msgstr "Quiz"
+
+#: src/ui/help-overlay.ui:71
+msgctxt "shortcut window"
+msgid "Start Quiz"
+msgstr "Quiz starten"
+
+#: src/ui/help-overlay.ui:77
+msgctxt "shortcut window"
+msgid "Delete Saved Quiz"
+msgstr "Bewaarde quiz verwijderen"
+
+#: src/ui/preferences.ui:8 src/ui/preferences.ui:14 src/ui/window.ui:937
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: src/ui/preferences.ui:17
+msgid "Color Theme"
+msgstr "Thema"
+
+#: src/ui/preferences.ui:18
+msgid "Set color theme"
+msgstr "Thema instellen"
+
+#: src/ui/preferences.ui:24
+msgid "Color theme"
+msgstr "Thema"
+
+#: src/ui/preferences.ui:40
+msgctxt "System color theme"
+msgid "System"
+msgstr "Systeemthema"
+
+#: src/ui/preferences.ui:54
+msgctxt "Light color theme"
+msgid "Light"
+msgstr "Licht thema"
+
+#: src/ui/preferences.ui:68
+msgctxt "Dark color theme"
+msgid "Dark"
+msgstr "Donker thema"
+
+#: src/ui/preferences.ui:82
+msgid "Quiz Settings"
+msgstr "Quizvoorkeuren"
+
+#: src/ui/preferences.ui:83
+msgid "Change quiz settings"
+msgstr "Pas de quizvoorkeuren aan"
+
+#: src/ui/preferences.ui:87
+msgid "Difficulty Level"
+msgstr "Moeilijkheidsgraad"
+
+#: src/ui/preferences.ui:88
+msgid "Select default difficulty level"
+msgstr "Kies de standaard moeilijkheidsgraad"
+
+#: src/ui/preferences.ui:94 src/ui/preferences.ui:104
+msgid "Delete all saved quiz"
+msgstr "Alle bewaarde quizzen verwijderen"
+
+#: src/ui/preferences.ui:106
+msgctxt "accessibility"
+msgid "Delete all saved quiz"
+msgstr "Alle bewaarde quizzen verwijderen"
+
+#: src/ui/window.ui:34
+msgid "Search Categories"
+msgstr "Zoeken naar categorieën"
+
+#: src/ui/window.ui:41
+msgid "Categories"
+msgstr "Categorieën"
+
+#: src/ui/window.ui:52
+msgid "Primary Menu"
+msgstr "Hoofdmenu"
+
+#: src/ui/window.ui:54
+msgctxt "accessibility"
+msgid "Primary menu"
+msgstr "Hoofdmenu"
+
+#: src/ui/window.ui:64
+msgid "Search categories"
+msgstr "Zoeken naar categorieën"
+
+#: src/ui/window.ui:72
+msgctxt "a11y"
+msgid "Search"
+msgstr "Zoeken"
+
+#: src/ui/window.ui:73
+msgctxt "a11y"
+msgid "Type to search categories"
+msgstr "Typ om categorieën te zoeken"
+
+#: src/ui/window.ui:109
+msgctxt "Navigate back to the main screen"
+msgid "Toggle Sidebar"
+msgstr "Zĳbalk tonen/verbergen"
+
+#: src/ui/window.ui:111
+msgctxt "accessibility"
+msgid "Toggle Sidebar"
+msgstr "Zĳbalk tonen/verbergen"
+
+#: src/ui/window.ui:251
+msgctxt "Start quiz"
+msgid "Start"
+msgstr "Starten"
+
+#: src/ui/window.ui:286
+msgid "Question"
+msgstr "Vraag"
+
+#: src/ui/window.ui:321 src/ui/window.ui:530
+msgid "Solutions"
+msgstr "Oplossingen"
+
+#: src/ui/window.ui:644
+msgid "Submit"
+msgstr "Indienen"
+
+#: src/ui/window.ui:685
+msgid "First Question"
+msgstr "Eerste vraag"
+
+#: src/ui/window.ui:687
+msgctxt "accessibility"
+msgid "First Question"
+msgstr "Eerste vraag"
+
+#: src/ui/window.ui:695
+msgid "Previous Question"
+msgstr "Vorige vraag"
+
+#: src/ui/window.ui:697
+msgctxt "accessibility"
+msgid "Previous Question"
+msgstr "Vorige vraag"
+
+#: src/ui/window.ui:745
+msgid "Next Question"
+msgstr "Volgende vraag"
+
+#: src/ui/window.ui:747
+msgctxt "accessibility"
+msgid "Next Question"
+msgstr "Volgende vraag"
+
+#: src/ui/window.ui:755
+msgid "Last Question"
+msgstr "Laatste vraag"
+
+#: src/ui/window.ui:757
+msgctxt "accessibility"
+msgid "Last Question"
+msgstr "Laatste vraag"
+
+#: src/ui/window.ui:798 src/ui/window.ui:856
+msgctxt "Back to main screen"
+msgid "Back"
+msgstr "Terug"
+
+#: src/ui/window.ui:800 src/ui/window.ui:858
+msgctxt "accessibility"
+msgid "Back"
+msgstr "Terug"
+
+#: src/ui/window.ui:834
+msgctxt "TRANSLATORS: Only translate the text 'Downloading'"
+msgid "<span font-weight=\"bold\">Downloading</span>"
+msgstr "<span font-weight=\"bold\">Bezig met downloaden…</span>"
+
+#: src/ui/window.ui:941
+msgid "Keyboard Shortcuts"
+msgstr "Sneltoetsen"
+
+#: src/ui/window.ui:945
+msgid "About Egghead"
+msgstr "Over Bolleboos"
