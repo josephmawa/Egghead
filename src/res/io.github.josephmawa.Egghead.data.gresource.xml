@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
+  <!-- ui -->
   <gresource prefix="/io/github/josephmawa/Egghead">
     <!-- This resource must be at gtk/help-overlay for Gtk to associate it with the 
     current GtkApplicationWindow. Check https://docs.gtk.org/gtk4/class.Application.html -->
@@ -8,9 +9,11 @@
     <file preprocess="xml-stripblanks" compressed="true" alias="preferences.ui">ui/preferences.ui</file>
     <file preprocess="xml-stripblanks" compressed="true" alias="page.ui">ui/page.ui</file>
   </gresource>
+  <!-- styles -->
   <gresource prefix="/io/github/josephmawa/Egghead">
     <file compressed="true" alias="index.css">styles/index.css</file>
   </gresource>
+  <!-- icons -->
   <gresource prefix="/io/github/josephmawa/Egghead/icons">
     <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-system-search-symbolic.svg">icons/egghead-system-search-symbolic.svg</file>
     <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-open-menu-symbolic.svg">icons/egghead-open-menu-symbolic.svg</file>
