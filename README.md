@@ -41,9 +41,9 @@ you can contribute in the following ways:
 
 - Star the project repository on GitHub
 - Report bugs if you encounter some. There are probably a handful of them.
-- You can also contribute code. If it is a bug fix, do open a pull request(PR). However,
-if it is a new feature, first open an issue so that we discuss it before opening
-a PR.
+- You can also contribute code. If it is a bug fix, do open a pull request(PR).
+However,if it is a new feature, first open an issue so that we discuss it
+before opening a PR.
 
 ## Run project locally
  <!-- markdownlint-disable no-inline-html -->
@@ -71,4 +71,4 @@ will always be free. It is released under the terms of the
 
 ## Copyright
 
-Copyright © 2025 [Joseph Mawa](https://github.com/josephmawa)
+© 2025 [Joseph Mawa](https://github.com/josephmawa)
