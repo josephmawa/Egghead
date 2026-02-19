@@ -1,0 +1,27 @@
+{
+  "name": "egghead",
+  "version": "0.1.2",
+  "description": "Simple quiz app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephmawa/Egghead.git"
+  },
+  "keywords": [
+    "quiz",
+    "recreation",
+    "app",
+    "desktop",
+    "linux"
+  ],
+  "author": "Joseph Mawa",
+  "license": "GPL-3.0-or-later",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/josephmawa/Egghead/issues"
+  },
+  "homepage": "https://github.com/josephmawa/Egghead#readme"
+}
