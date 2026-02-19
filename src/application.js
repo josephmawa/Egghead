@@ -1,6 +1,5 @@
 import GObject from "gi://GObject";
 import Gio from "gi://Gio";
-import Gtk from "gi://Gtk?version=4.0";
 import Adw from "gi://Adw?version=1";
 
 import { EggheadWindow } from "./window.js";
@@ -48,9 +47,7 @@ export const EggheadApplication = GObject.registerClass(
 
     vfunc_activate() {
       let activeWindow = this.active_window;
-
       if (!activeWindow) activeWindow = new EggheadWindow(this);
-
       activeWindow.present();
     }
   }
