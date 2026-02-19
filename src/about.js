@@ -9,7 +9,7 @@ const aboutParams = {
   license_type: Gtk.License.LGPL_3_0,
   developers: ["Joseph Mawa"],
   artists: ["Joseph Mawa"],
-  copyright: "Copyright © 2025 Joseph Mawa",
+  copyright: "© 2025 Joseph Mawa",
   ...__PROJECT_URLS__,
 };
 
