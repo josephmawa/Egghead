@@ -4,7 +4,11 @@
   "description": "Simple quiz app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "flatpak-builder --force-clean --build-only build-dir io.github.josephmawa.Egghead.json",
+    "finish": "flatpak-builder --no-appstream-compose --force-clean --finish-only build-dir io.github.josephmawa.Egghead.json",
+    "export": "flatpak-builder --force-clean --export-only --repo=repo build-dir io.github.josephmawa.Egghead.json",
+    "start": "flatpak-builder --run build-dir io.github.josephmawa.Egghead.json io.github.josephmawa.Egghead",
+    "clean": "rm -rf .flatpak-builder build-dir builddir repo"
   },
   "repository": {
     "type": "git",
