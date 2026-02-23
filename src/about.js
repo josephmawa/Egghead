@@ -1,5 +1,5 @@
-import Adw from "gi://Adw?version=1";
 import Gtk from "gi://Gtk";
+import Adw from "gi://Adw?version=1";
 
 const aboutParams = {
   application_name: __APPLICATION_NAME__,

@@ -1,7 +1,7 @@
 import Adw from "gi://Adw";
 import Gtk from "gi://Gtk";
-import GObject from "gi://GObject";
 import Gio from "gi://Gio";
+import GObject from "gi://GObject";
 
 const difficultyLevels = [
   {

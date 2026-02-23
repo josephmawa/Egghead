@@ -1,9 +1,9 @@
-import GObject from "gi://GObject";
 import Gio from "gi://Gio";
+import GObject from "gi://GObject";
 import Adw from "gi://Adw?version=1";
 
-import { EggheadWindow } from "./window.js";
 import { AboutDialog } from "./about.js";
+import { EggheadWindow } from "./window.js";
 import { EggheadPreferencesDialog } from "./preferences.js";
 import "./lib/he.js";
 
