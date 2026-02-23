@@ -12,16 +12,18 @@
 <p align="center">
   <img src="./screenshots/egghead-difficulty-view-light.png" alt="Egghead difficulty view in light mode" width="817" height="712"/>
 </p>
-<p align="center">
-  <img src="./screenshots/egghead-difficulty-view-dark.png" alt="Egghead difficulty view in dark mode" width="817" height="712"/>
-</p>
-<p align="center">
-  <img src="./screenshots/egghead-quiz-view-light.png" alt="Egghead quiz view in light mode" width="817" height="764"/>
-</p>
+<details align="center">
+  <summary>More screenshots</summary>
+  <p align="center">
+    <img src="./screenshots/egghead-difficulty-view-dark.png" alt="Egghead difficulty view in dark mode" width="817" height="712"/>
+  </p>
+  <p align="center">
+    <img src="./screenshots/egghead-quiz-view-light.png" alt="Egghead quiz view in light mode" width="817" height="764"/>
+  </p>
+</details>
 <p align="center">
   <img src="./screenshots/egghead-quiz-view-dark.png" alt="Egghead quiz view in dark mode" width="817" height="764"/>
 </p>
-
 <!-- markdownlint-enable -->
 <!-- markdownlint-disable headings -->
 
