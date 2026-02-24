@@ -14,15 +14,15 @@
     <file compressed="true" alias="index.css">styles/index.css</file>
   </gresource>
   <!-- icons -->
-  <gresource prefix="/io/github/josephmawa/Egghead/icons">
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-system-search-symbolic.svg">icons/egghead-system-search-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-open-menu-symbolic.svg">icons/egghead-open-menu-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-sidebar-show-right-symbolic-rtl.svg">icons/egghead-sidebar-show-right-symbolic-rtl.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-go-first-symbolic-rtl.svg">icons/egghead-go-first-symbolic-rtl.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-go-first-symbolic.svg">icons/egghead-go-first-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-go-next-symbolic-rtl.svg">icons/egghead-go-next-symbolic-rtl.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-go-next-symbolic.svg">icons/egghead-go-next-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-object-select-symbolic.svg">icons/egghead-object-select-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="scalable/actions/egghead-user-trash-symbolic.svg">icons/egghead-user-trash-symbolic.svg</file>
+  <gresource prefix="/io/github/josephmawa/Egghead/icons/scalable/actions">
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-system-search-symbolic.svg">icons/egghead-system-search-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-open-menu-symbolic.svg">icons/egghead-open-menu-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-sidebar-show-right-symbolic-rtl.svg">icons/egghead-sidebar-show-right-symbolic-rtl.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-go-first-symbolic-rtl.svg">icons/egghead-go-first-symbolic-rtl.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-go-first-symbolic.svg">icons/egghead-go-first-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-go-next-symbolic-rtl.svg">icons/egghead-go-next-symbolic-rtl.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-go-next-symbolic.svg">icons/egghead-go-next-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-object-select-symbolic.svg">icons/egghead-object-select-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="egghead-user-trash-symbolic.svg">icons/egghead-user-trash-symbolic.svg</file>
   </gresource>
 </gresources>
