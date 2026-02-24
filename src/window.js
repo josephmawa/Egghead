@@ -1,18 +1,18 @@
-import GObject from "gi://GObject";
 import Adw from "gi://Adw";
 import Gtk from "gi://Gtk";
 import Gio from "gi://Gio";
 import GLib from "gi://GLib";
+import GObject from "gi://GObject";
 
 import { Category } from "./category.js";
 import { triviaCategories } from "./util/data.js";
 import {
-  parseTriviaCategories,
+  shuffle,
   fetchQuiz,
   formatData,
-  generateMetadata,
-  shuffle,
   getCustomFilter,
+  generateMetadata,
+  parseTriviaCategories,
 } from "./util/utils.js";
 import { Quiz, initialQuiz } from "./util/quiz.js";
 import { Page } from "./util/page.js";
