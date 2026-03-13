@@ -7,7 +7,7 @@ const BASE_URL = "https://opentdb.com";
 Gio._promisify(
   Soup.Session.prototype,
   "send_and_read_async",
-  "send_and_read_finish"
+  "send_and_read_finish",
 );
 
 const httpSession = new Soup.Session();
@@ -84,7 +84,7 @@ export async function fetchData(url) {
     const bytes = await httpSession.send_and_read_async(
       message,
       GLib.PRIORITY_DEFAULT,
-      null
+      null,
     );
 
     if (message.get_status() !== Soup.Status.OK) {
@@ -104,15 +104,22 @@ export async function fetchData(url) {
 }
 
 export function getQuestionCount(data, difficulty) {
+  const {
+    total_question_count: total,
+    total_easy_question_count: easy,
+    total_medium_question_count: medium,
+    total_hard_question_count: hard,
+  } = data.category_question_count;
+
   switch (difficulty) {
     case "mixed":
-      return data?.category_question_count?.total_question_count;
+      return total;
     case "easy":
-      return data?.category_question_count?.total_easy_question_count;
+      return easy;
     case "medium":
-      return data?.category_question_count?.total_medium_question_count;
+      return medium;
     case "hard":
-      return data?.category_question_count?.total_hard_question_count;
+      return hard;
     default:
       throw new Error("An error occurred while retrivieving question count");
   }
@@ -139,7 +146,7 @@ export async function fetchQuiz(category, difficulty) {
       [tokenUrl, quizCountUrl].map(async (url) => {
         const responseData = await fetchData(url);
         return responseData;
-      })
+      }),
     );
 
     if (!tokenData || !quizCount) {
@@ -148,7 +155,8 @@ export async function fetchQuiz(category, difficulty) {
 
     const count = getQuestionCount(quizCount, difficulty);
     // FIXME: Getting a maximum of 50 questions at the moment
-    // Increase to get all questions and save them client side
+    // Increase to get all questions and save them client side 
+    // in a database.
     const quizCountForEachReq = getQuizCountForEachReq(count > 50 ? 50 : count);
     let quizUrl;
 
@@ -164,7 +172,7 @@ export async function fetchQuiz(category, difficulty) {
       urls.map(async (url) => {
         const data = await fetchData(url);
         return data?.results ?? [];
-      })
+      }),
     );
 
     return data.flat(1);
