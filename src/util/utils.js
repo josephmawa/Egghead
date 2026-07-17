@@ -12,6 +12,8 @@ Gio._promisify(
 
 const httpSession = new Soup.Session();
 
+export const settings = Gio.Settings.new(pkg.name);
+
 export function parseTriviaCategories(categories) {
   const categoriesMap = new Map();
 

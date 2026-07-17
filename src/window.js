@@ -8,6 +8,7 @@ import { Category } from "./category.js";
 import { triviaCategories } from "./util/data.js";
 import {
   shuffle,
+  settings,
   fetchQuiz,
   formatData,
   getCustomFilter,
@@ -174,7 +175,7 @@ export const EggheadWindow = GObject.registerClass(
           this.is_downloading = true;
           this.selected = 0;
 
-          const difficultyLevel = this.settings.get_string("difficulty");
+          const difficultyLevel = settings.get_string("difficulty");
           const metaData = this.metaData[this.category_id][difficultyLevel];
 
           let formattedData;
@@ -265,7 +266,7 @@ export const EggheadWindow = GObject.registerClass(
         parameter_type: GLib.VariantType.new("s"),
       });
       selectDifficulty.connect("activate", (_selectDifficulty, param) => {
-        this.settings.set_value("difficulty", param);
+        settings.set_value("difficulty", param);
       });
 
       const deleteSavedQuiz = new Gio.SimpleAction({
@@ -593,37 +594,33 @@ export const EggheadWindow = GObject.registerClass(
     };
 
     bindSettings = () => {
-      this.settings = Gio.Settings.new(pkg.name);
-      this.settings.bind(
+      settings.bind(
         "window-width",
         this,
         "default-width",
         Gio.SettingsBindFlags.DEFAULT,
       );
-      this.settings.bind(
+      settings.bind(
         "window-height",
         this,
         "default-height",
         Gio.SettingsBindFlags.DEFAULT,
       );
-      this.settings.bind(
+      settings.bind(
         "window-maximized",
         this,
         "maximized",
         Gio.SettingsBindFlags.DEFAULT,
       );
 
-      this.settings.bind(
+      settings.bind(
         "category-id",
         this,
         "category_id",
         Gio.SettingsBindFlags.DEFAULT,
       );
 
-      this.settings.connect(
-        "changed::difficulty",
-        this.setDefaultDifficultyLevel,
-      );
+      settings.connect("changed::difficulty", this.setDefaultDifficultyLevel);
     };
 
     bindPaginationBtns = () => {
@@ -704,18 +701,18 @@ export const EggheadWindow = GObject.registerClass(
     };
 
     createColorSchemeAction = () => {
-      this.application.add_action(this.settings.create_action("color-scheme"));
-      this.settings.connect("changed::color-scheme", this.setColorScheme);
+      this.application.add_action(settings.create_action("color-scheme"));
+      settings.connect("changed::color-scheme", this.setColorScheme);
       this.setColorScheme();
     };
 
     setColorScheme = () => {
       const styleManager = Adw.StyleManager.get_default();
-      styleManager.set_color_scheme(this.settings.get_int("color-scheme"));
+      styleManager.set_color_scheme(settings.get_int("color-scheme"));
     };
 
     setDefaultDifficultyLevel = () => {
-      const difficulty = this.settings.get_string("difficulty");
+      const difficulty = settings.get_string("difficulty");
 
       switch (difficulty) {
         case "mixed":
@@ -761,7 +758,7 @@ export const EggheadWindow = GObject.registerClass(
     };
 
     initCategoryNameProperty = () => {
-      const categoryId = this.settings.get_value("category-id")?.unpack();
+      const categoryId = settings.get_value("category-id")?.unpack();
 
       for (const category of this.triviaCategories) {
         if (category.id === categoryId) {

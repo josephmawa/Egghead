@@ -3,6 +3,8 @@ import Gtk from "gi://Gtk";
 import Gio from "gi://Gio";
 import GObject from "gi://GObject";
 
+import { settings } from "./util/utils.js";
+
 const difficultyLevels = [
   {
     key: "mixed",
@@ -43,8 +45,7 @@ export const EggheadPreferencesDialog = GObject.registerClass(
 
       this.setDifficultyLevelModel();
 
-      this.settings = Gio.Settings.new(pkg.name);
-      this.settings.bind(
+      settings.bind(
         "difficulty",
         this,
         "difficulty",
