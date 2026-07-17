@@ -32,7 +32,7 @@ export const EggheadWindow = GObject.registerClass(
         "categoryName",
         "Selected Category Name",
         GObject.ParamFlags.READWRITE,
-        ""
+        "",
       ),
       category_id: GObject.ParamSpec.int(
         "category_id",
@@ -42,56 +42,56 @@ export const EggheadWindow = GObject.registerClass(
         // This requires specifying min and max for binding to work
         0,
         5000,
-        9
+        9,
       ),
       is_downloading: GObject.ParamSpec.boolean(
         "is_downloading",
         "isDownloading",
         "Is downloading quiz",
         GObject.ParamFlags.READWRITE,
-        false
+        false,
       ),
       has_error: GObject.ParamSpec.boolean(
         "has_error",
         "hasError",
         "Has an error occurred?",
         GObject.ParamFlags.READWRITE,
-        false
+        false,
       ),
       game_on: GObject.ParamSpec.boolean(
         "game_on",
         "gameOn",
         "Has started quiz",
         GObject.ParamFlags.READWRITE,
-        false
+        false,
       ),
       selected: GObject.ParamSpec.int(
         "selected",
         "Selected",
         "Selected quiz index",
         GObject.ParamFlags.READWRITE,
-        0
+        0,
       ),
       current_question: GObject.ParamSpec.string(
         "current_question",
         "currentQuestion",
         "Current question",
         GObject.ParamFlags.READWRITE,
-        ""
+        "",
       ),
       quiz: GObject.ParamSpec.object(
         "quiz",
         "Quiz",
         "Current Quiz",
         GObject.ParamFlags.READWRITE,
-        new Quiz(initialQuiz)
+        new Quiz(initialQuiz),
       ),
       quizStore: GObject.ParamSpec.object(
         "quizStore",
         "quiz_store",
         "Quiz list store",
         GObject.ParamFlags.READWRITE,
-        GObject.Object
+        GObject.Object,
       ),
     },
     InternalChildren: [
@@ -131,7 +131,7 @@ export const EggheadWindow = GObject.registerClass(
 
       this.loadStyles();
       this.bindSettings();
-      this.setPreferredColorScheme();
+      this.createColorSchemeAction();
       this.setDefaultDifficultyLevel();
       this.setListViewModel();
       this.bindPaginationBtns();
@@ -239,11 +239,11 @@ export const EggheadWindow = GObject.registerClass(
 
           alertDialog.set_response_appearance(
             "cancel_download",
-            Adw.ResponseAppearance.DESTRUCTIVE
+            Adw.ResponseAppearance.DESTRUCTIVE,
           );
           alertDialog.set_response_appearance(
             "close_dialog",
-            Adw.ResponseAppearance.SUGGESTED
+            Adw.ResponseAppearance.SUGGESTED,
           );
 
           alertDialog.connect("response", (_alertDialog, response) => {
@@ -275,7 +275,7 @@ export const EggheadWindow = GObject.registerClass(
         const alertDialog = new Adw.AlertDialog({
           heading: _("Delete Saved Quiz"),
           body: _(
-            "Are you sure you want to delete all the saved quiz? This action is irreversible."
+            "Are you sure you want to delete all the saved quiz? This action is irreversible.",
           ),
           default_response: "delete_saved_quiz",
           close_response: "close_dialog",
@@ -287,11 +287,11 @@ export const EggheadWindow = GObject.registerClass(
 
         alertDialog.set_response_appearance(
           "delete_saved_quiz",
-          Adw.ResponseAppearance.DESTRUCTIVE
+          Adw.ResponseAppearance.DESTRUCTIVE,
         );
         alertDialog.set_response_appearance(
           "close_dialog",
-          Adw.ResponseAppearance.SUGGESTED
+          Adw.ResponseAppearance.SUGGESTED,
         );
 
         alertDialog.connect("response", (_alertDialog, response) => {
@@ -370,7 +370,7 @@ export const EggheadWindow = GObject.registerClass(
 
           if (!selectedAnswerId || !correctAnswerId) {
             throw new Error(
-              `Both ${selectedAnswerId} and ${correctAnswerId} should not be undefined`
+              `Both ${selectedAnswerId} and ${correctAnswerId} should not be undefined`,
             );
           }
 
@@ -457,11 +457,11 @@ export const EggheadWindow = GObject.registerClass(
 
         alertDialog.set_response_appearance(
           "cancel_quiz",
-          Adw.ResponseAppearance.DESTRUCTIVE
+          Adw.ResponseAppearance.DESTRUCTIVE,
         );
         alertDialog.set_response_appearance(
           "close_dialog",
-          Adw.ResponseAppearance.SUGGESTED
+          Adw.ResponseAppearance.SUGGESTED,
         );
 
         alertDialog.connect("response", (_alertDialog, response) => {
@@ -580,7 +580,7 @@ export const EggheadWindow = GObject.registerClass(
           (_, categoryId) => {
             return [true, object.id === categoryId];
           },
-          null
+          null,
         );
 
         label.label = object.name;
@@ -598,36 +598,31 @@ export const EggheadWindow = GObject.registerClass(
         "window-width",
         this,
         "default-width",
-        Gio.SettingsBindFlags.DEFAULT
+        Gio.SettingsBindFlags.DEFAULT,
       );
       this.settings.bind(
         "window-height",
         this,
         "default-height",
-        Gio.SettingsBindFlags.DEFAULT
+        Gio.SettingsBindFlags.DEFAULT,
       );
       this.settings.bind(
         "window-maximized",
         this,
         "maximized",
-        Gio.SettingsBindFlags.DEFAULT
+        Gio.SettingsBindFlags.DEFAULT,
       );
 
       this.settings.bind(
         "category-id",
         this,
         "category_id",
-        Gio.SettingsBindFlags.DEFAULT
-      );
-
-      this.settings.connect(
-        "changed::preferred-theme",
-        this.setPreferredColorScheme
+        Gio.SettingsBindFlags.DEFAULT,
       );
 
       this.settings.connect(
         "changed::difficulty",
-        this.setDefaultDifficultyLevel
+        this.setDefaultDifficultyLevel,
       );
     };
 
@@ -641,7 +636,7 @@ export const EggheadWindow = GObject.registerClass(
           if (selected > 0) return [true, true];
           return [true, false];
         },
-        null
+        null,
       );
 
       this.bind_property_full(
@@ -653,7 +648,7 @@ export const EggheadWindow = GObject.registerClass(
           if (selected > 0) return [true, true];
           return [true, false];
         },
-        null
+        null,
       );
 
       this.bind_property_full(
@@ -666,7 +661,7 @@ export const EggheadWindow = GObject.registerClass(
           if (selected < numItems - 1) return [true, true];
           return [true, false];
         },
-        null
+        null,
       );
 
       this.bind_property_full(
@@ -679,7 +674,7 @@ export const EggheadWindow = GObject.registerClass(
           if (selected < numItems - 1) return [true, true];
           return [true, false];
         },
-        null
+        null,
       );
     };
 
@@ -693,7 +688,7 @@ export const EggheadWindow = GObject.registerClass(
           const quizObject = this.quizStore.get_item(selected);
           return [true, quizObject];
         },
-        null
+        null,
       );
     };
 
@@ -704,28 +699,19 @@ export const EggheadWindow = GObject.registerClass(
       Gtk.StyleContext.add_provider_for_display(
         this.display,
         cssProvider,
-        Gtk.STYLE_PROVIDER_PRIORITY_USER
+        Gtk.STYLE_PROVIDER_PRIORITY_USER,
       );
     };
 
-    setPreferredColorScheme = () => {
-      const preferredColorScheme = this.settings.get_string("preferred-theme");
-      const { DEFAULT, FORCE_LIGHT, FORCE_DARK } = Adw.ColorScheme;
-      let colorScheme = DEFAULT;
+    createColorSchemeAction = () => {
+      this.application.add_action(this.settings.create_action("color-scheme"));
+      this.settings.connect("changed::color-scheme", this.setColorScheme);
+      this.setColorScheme();
+    };
 
-      if (preferredColorScheme === "system") {
-        colorScheme = DEFAULT;
-      }
-
-      if (preferredColorScheme === "light") {
-        colorScheme = FORCE_LIGHT;
-      }
-
-      if (preferredColorScheme === "dark") {
-        colorScheme = FORCE_DARK;
-      }
-
-      this.application.get_style_manager().color_scheme = colorScheme;
+    setColorScheme = () => {
+      const styleManager = Adw.StyleManager.get_default();
+      styleManager.set_color_scheme(this.settings.get_int("color-scheme"));
     };
 
     setDefaultDifficultyLevel = () => {
@@ -785,7 +771,7 @@ export const EggheadWindow = GObject.registerClass(
 
         if (category.hasChildren) {
           const childCategory = category.children.find(
-            ({ id }) => id === categoryId
+            ({ id }) => id === categoryId,
           );
 
           if (childCategory) {
@@ -800,7 +786,7 @@ export const EggheadWindow = GObject.registerClass(
       this._pagination_list_view.scroll_to(
         position,
         Gtk.ListScrollFlags.FOCUS,
-        null
+        null,
       );
     };
 
@@ -888,7 +874,7 @@ export const EggheadWindow = GObject.registerClass(
           null,
           false,
           Gio.FileCreateFlags.REPLACE_DESTINATION,
-          null
+          null,
         );
 
         if (success) {
@@ -940,5 +926,5 @@ export const EggheadWindow = GObject.registerClass(
         console.log("Failed to delete %s".format(outerDirPath));
       }
     };
-  }
+  },
 );
