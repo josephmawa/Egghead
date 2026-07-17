@@ -3,6 +3,8 @@ import Gtk from "gi://Gtk";
 import Gio from "gi://Gio";
 import GObject from "gi://GObject";
 
+import { settings } from "./util/utils.js";
+
 const difficultyLevels = [
   {
     key: "mixed",
@@ -26,21 +28,14 @@ export const EggheadPreferencesDialog = GObject.registerClass(
   {
     GTypeName: "EggheadPreferencesDialog",
     Template: __getResourceUri__("preferences.ui"),
-    InternalChildren: ["system", "dark", "light", "difficulty_level"],
+    InternalChildren: ["difficulty_level"],
     Properties: {
-      theme: GObject.ParamSpec.string(
-        "theme",
-        "Theme",
-        "Preferred theme",
-        GObject.ParamFlags.READWRITE,
-        ""
-      ),
       difficulty: GObject.ParamSpec.string(
         "difficulty",
         "Difficulty",
         "Preferred difficulty",
         GObject.ParamFlags.READWRITE,
-        ""
+        "",
       ),
     },
   },
@@ -50,45 +45,11 @@ export const EggheadPreferencesDialog = GObject.registerClass(
 
       this.setDifficultyLevelModel();
 
-      this.settings = Gio.Settings.new(pkg.name);
-      this.settings.bind(
-        "preferred-theme",
-        this,
-        "theme",
-        Gio.SettingsBindFlags.DEFAULT
-      );
-      this.settings.bind(
+      settings.bind(
         "difficulty",
         this,
         "difficulty",
-        Gio.SettingsBindFlags.DEFAULT
-      );
-
-      this.bind_property_full(
-        "theme",
-        this._system,
-        "active",
-        GObject.BindingFlags.BIDIRECTIONAL | GObject.BindingFlags.SYNC_CREATE,
-        (_, theme) => [true, theme === "system"],
-        (_, theme) => [theme, "system"]
-      );
-
-      this.bind_property_full(
-        "theme",
-        this._light,
-        "active",
-        GObject.BindingFlags.BIDIRECTIONAL | GObject.BindingFlags.SYNC_CREATE,
-        (_, theme) => [true, theme === "light"],
-        (_, theme) => [theme, "light"]
-      );
-
-      this.bind_property_full(
-        "theme",
-        this._dark,
-        "active",
-        GObject.BindingFlags.BIDIRECTIONAL | GObject.BindingFlags.SYNC_CREATE,
-        (_, theme) => [true, theme === "dark"],
-        (_, theme) => [theme, "dark"]
+        Gio.SettingsBindFlags.DEFAULT,
       );
 
       this.bind_property_full(
@@ -98,12 +59,12 @@ export const EggheadPreferencesDialog = GObject.registerClass(
         GObject.BindingFlags.BIDIRECTIONAL | GObject.BindingFlags.SYNC_CREATE,
         (_, difficultyLevel) => {
           const difficultyObject = difficultyLevels.find(
-            ({ key }) => key === difficultyLevel
+            ({ key }) => key === difficultyLevel,
           );
 
           if (!difficultyObject) {
             throw new Error(
-              "Mismatch between difficulty keys in the settings and in difficultyLevels array"
+              "Mismatch between difficulty keys in the settings and in difficultyLevels array",
             );
           }
 
@@ -119,17 +80,16 @@ export const EggheadPreferencesDialog = GObject.registerClass(
           return [false, 0];
         },
         (_, selected) => {
-          const stringObject =
-            this._difficulty_level.model.get_item(selected);
+          const stringObject = this._difficulty_level.model.get_item(selected);
 
           if (stringObject?.string) {
             const difficultyObject = difficultyLevels.find(
-              ({ description }) => description === stringObject?.string
+              ({ description }) => description === stringObject?.string,
             );
 
             if (!difficultyObject) {
               throw new Error(
-                "There is a mismatch between difficulty descriptions in the difficulty level settings model and difficultyLevels array"
+                "There is a mismatch between difficulty descriptions in the difficulty level settings model and difficultyLevels array",
               );
             }
 
@@ -137,23 +97,23 @@ export const EggheadPreferencesDialog = GObject.registerClass(
           }
 
           return [false, "mixed"];
-        }
+        },
       );
     }
 
     setDifficultyLevelModel = () => {
       const _difficultyLevels = difficultyLevels.map(
-        ({ description }) => description
+        ({ description }) => description,
       );
       this._difficulty_level.model = Gtk.StringList.new(_difficultyLevels);
 
       const propExpression = Gtk.PropertyExpression.new(
         Gtk.StringObject,
         null,
-        "string"
+        "string",
       );
 
       this._difficulty_level.expression = propExpression;
     };
-  }
+  },
 );
