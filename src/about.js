@@ -2,7 +2,7 @@ import Gtk from "gi://Gtk";
 import Adw from "gi://Adw?version=1";
 
 const aboutParams = {
-  application_name: __APPLICATION_NAME__,
+  application_name: __APP_NAME__,
   developer_name: "Joseph Mawa",
   application_icon: pkg.name,
   version: pkg.version,

@@ -10,7 +10,7 @@ imports.package.init({
   datadir: "@datadir@",
 });
 
-globalThis.__APPLICATION_NAME__ = "Egghead";
+globalThis.__APP_NAME__ = "Egghead";
 globalThis.__PROJECT_URLS__ = {
   website: "@WEBSITE_URL@",
   issue_url: "@ISSUE_URL@",
