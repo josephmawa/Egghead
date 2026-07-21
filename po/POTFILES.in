@@ -11,9 +11,9 @@ src/main.js
 src/preferences.js
 src/window.js
 
-src/ui/help-overlay.ui
 src/ui/page.ui
 src/ui/preferences.ui
+src/ui/shortcuts-dialog.ui
 src/ui/window.ui
 
 src/util/data.js

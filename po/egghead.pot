@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: egghead\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 21:57-0300\n"
+"POT-Creation-Date: 2026-07-21 19:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,229 +59,225 @@ msgstr ""
 msgid "Joseph Mawa"
 msgstr ""
 
-#: data/io.github.josephmawa.Egghead.metainfo.xml.in:59
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:41
 msgid "Egghead difficulty view in light mode"
 msgstr ""
 
-#: data/io.github.josephmawa.Egghead.metainfo.xml.in:63
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:45
 msgid "Egghead difficulty view in dark mode"
 msgstr ""
 
-#: data/io.github.josephmawa.Egghead.metainfo.xml.in:67
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:49
 msgid "Egghead quiz view in light mode"
 msgstr ""
 
-#: data/io.github.josephmawa.Egghead.metainfo.xml.in:71
+#: data/io.github.josephmawa.Egghead.metainfo.xml.in:53
 msgid "Egghead quiz view in dark mode"
 msgstr ""
 
-#: src/preferences.js:9 src/ui/window.ui:192
+#: src/preferences.js:11 src/ui/window.ui:191
 msgid "Mixed"
 msgstr ""
 
-#: src/preferences.js:13 src/ui/window.ui:206
+#: src/preferences.js:15 src/ui/window.ui:205
 msgid "Easy"
 msgstr ""
 
-#: src/preferences.js:17 src/ui/window.ui:220
+#: src/preferences.js:19 src/ui/window.ui:219
 msgid "Medium"
 msgstr ""
 
-#: src/preferences.js:21 src/ui/window.ui:234
+#: src/preferences.js:23 src/ui/window.ui:233
 msgid "Hard"
 msgstr ""
 
-#: src/window.js:230
+#: src/window.js:231
 msgid "Cancel Download"
 msgstr ""
 
-#: src/window.js:231
+#: src/window.js:232
 msgid "Are you sure you want to cancel this download?"
 msgstr ""
 
-#: src/window.js:237 src/window.js:455
+#: src/window.js:238 src/window.js:456
 msgid "Cancel"
 msgstr ""
 
-#: src/window.js:238 src/window.js:286 src/window.js:456
+#: src/window.js:239 src/window.js:287 src/window.js:457
 msgid "Close"
 msgstr ""
 
-#: src/window.js:276 src/ui/preferences.ui:93
+#: src/window.js:277 src/ui/preferences.ui:77
 msgid "Delete Saved Quiz"
 msgstr ""
 
-#: src/window.js:278
+#: src/window.js:279
 msgid ""
 "Are you sure you want to delete all the saved quiz? This action is "
 "irreversible."
 msgstr ""
 
-#: src/window.js:285
+#: src/window.js:286
 msgid "Delete"
 msgstr ""
 
-#: src/window.js:323
+#: src/window.js:324
 msgid "Deleted saved quiz"
 msgstr ""
 
-#: src/window.js:448
+#: src/window.js:449
 msgid "Quiz in session"
 msgstr ""
 
-#: src/window.js:449
+#: src/window.js:450
 msgid "Are you sure you want to cancel this quiz?"
 msgstr ""
 
-#: src/window.js:841
+#: src/window.js:824
 msgid "Failed to save metadata"
 msgstr ""
 
-#: src/window.js:873
+#: src/window.js:856
 msgid "Failed to read saved data"
 msgstr ""
 
-#: src/window.js:895
+#: src/window.js:878
 msgid "Successfully saved quiz to file"
 msgstr ""
 
-#: src/window.js:898
+#: src/window.js:881
 msgid "Failed to save quiz to file"
 msgstr ""
 
-#: src/window.js:904
+#: src/window.js:887
 msgid "An error occurred while creating directory"
 msgstr ""
 
-#: src/window.js:915
+#: src/window.js:898
 #, javascript-format
 msgid "%s doesn't exist"
 msgstr ""
 
-#: src/window.js:924 src/window.js:931 src/window.js:938
+#: src/window.js:907 src/window.js:914 src/window.js:921
 #, javascript-format
 msgid "Deleted %s successfully"
 msgstr ""
 
-#: src/ui/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr ""
-
-#: src/ui/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Toggle Menu"
-msgstr ""
-
-#: src/ui/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Show Preferences"
-msgstr ""
-
-#: src/ui/help-overlay.ui:26
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr ""
-
-#: src/ui/help-overlay.ui:32
-msgctxt "shortcut window"
-msgid "Quit"
-msgstr ""
-
-#: src/ui/help-overlay.ui:40
-msgctxt "shortcut window"
-msgid "Categories"
-msgstr ""
-
-#: src/ui/help-overlay.ui:43
-msgctxt "shortcut window"
-msgid "Toggle Sidebar"
-msgstr ""
-
-#: src/ui/help-overlay.ui:49
-msgctxt "shortcut window"
-msgid "Search Categories"
-msgstr ""
-
-#: src/ui/help-overlay.ui:57
-msgctxt "shortcut window"
-msgid "Navigation"
-msgstr ""
-
-#: src/ui/help-overlay.ui:60
-msgctxt "shortcut window"
-msgid "Back"
-msgstr ""
-
-#: src/ui/help-overlay.ui:68
-msgctxt "shortcut window"
-msgid "Quiz"
-msgstr ""
-
-#: src/ui/help-overlay.ui:71
-msgctxt "shortcut window"
-msgid "Start Quiz"
-msgstr ""
-
-#: src/ui/help-overlay.ui:77
-msgctxt "shortcut window"
-msgid "Delete Saved Quiz"
-msgstr ""
-
-#: src/ui/preferences.ui:8 src/ui/preferences.ui:14 src/ui/window.ui:937
+#: src/ui/preferences.ui:6 src/ui/preferences.ui:12 src/ui/window.ui:936
 msgid "Preferences"
 msgstr ""
 
-#: src/ui/preferences.ui:17
+#: src/ui/preferences.ui:15
 msgid "Color Theme"
 msgstr ""
 
-#: src/ui/preferences.ui:18
+#: src/ui/preferences.ui:16
 msgid "Set color theme"
 msgstr ""
 
-#: src/ui/preferences.ui:24
-msgid "Color theme"
-msgstr ""
-
-#: src/ui/preferences.ui:40
+#: src/ui/preferences.ui:20
 msgctxt "System color theme"
 msgid "System"
 msgstr ""
 
-#: src/ui/preferences.ui:54
+#: src/ui/preferences.ui:35
 msgctxt "Light color theme"
 msgid "Light"
 msgstr ""
 
-#: src/ui/preferences.ui:68
+#: src/ui/preferences.ui:50
 msgctxt "Dark color theme"
 msgid "Dark"
 msgstr ""
 
-#: src/ui/preferences.ui:82
+#: src/ui/preferences.ui:66
 msgid "Quiz Settings"
 msgstr ""
 
-#: src/ui/preferences.ui:83
+#: src/ui/preferences.ui:67
 msgid "Change quiz settings"
 msgstr ""
 
-#: src/ui/preferences.ui:87
+#: src/ui/preferences.ui:71
 msgid "Difficulty Level"
 msgstr ""
 
-#: src/ui/preferences.ui:88
+#: src/ui/preferences.ui:72
 msgid "Select default difficulty level"
 msgstr ""
 
-#: src/ui/preferences.ui:94 src/ui/preferences.ui:104
+#: src/ui/preferences.ui:78 src/ui/preferences.ui:88
 msgid "Delete all saved quiz"
 msgstr ""
 
-#: src/ui/preferences.ui:106
+#: src/ui/preferences.ui:90
 msgctxt "accessibility"
 msgid "Delete all saved quiz"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:6
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:9
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:15
+msgctxt "shortcut window"
+msgid "Show Preferences"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:21
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:27
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:35
+msgctxt "shortcut window"
+msgid "Categories"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:38
+msgctxt "shortcut window"
+msgid "Toggle Sidebar"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:44
+msgctxt "shortcut window"
+msgid "Search Categories"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:52
+msgctxt "shortcut window"
+msgid "Navigation"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:55
+msgctxt "shortcut window"
+msgid "Back"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:63
+msgctxt "shortcut window"
+msgid "Quiz"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:66
+msgctxt "shortcut window"
+msgid "Start Quiz"
+msgstr ""
+
+#: src/ui/shortcuts-dialog.ui:72
+msgctxt "shortcut window"
+msgid "Delete Saved Quiz"
 msgstr ""
 
 #: src/ui/window.ui:34
@@ -325,78 +321,78 @@ msgctxt "accessibility"
 msgid "Toggle Sidebar"
 msgstr ""
 
-#: src/ui/window.ui:251
+#: src/ui/window.ui:250
 msgctxt "Start quiz"
 msgid "Start"
 msgstr ""
 
-#: src/ui/window.ui:286
+#: src/ui/window.ui:285
 msgid "Question"
 msgstr ""
 
-#: src/ui/window.ui:321 src/ui/window.ui:530
+#: src/ui/window.ui:320 src/ui/window.ui:529
 msgid "Solutions"
 msgstr ""
 
-#: src/ui/window.ui:644
+#: src/ui/window.ui:643
 msgid "Submit"
 msgstr ""
 
-#: src/ui/window.ui:685
+#: src/ui/window.ui:684
 msgid "First Question"
 msgstr ""
 
-#: src/ui/window.ui:687
+#: src/ui/window.ui:686
 msgctxt "accessibility"
 msgid "First Question"
 msgstr ""
 
-#: src/ui/window.ui:695
+#: src/ui/window.ui:694
 msgid "Previous Question"
 msgstr ""
 
-#: src/ui/window.ui:697
+#: src/ui/window.ui:696
 msgctxt "accessibility"
 msgid "Previous Question"
 msgstr ""
 
-#: src/ui/window.ui:745
+#: src/ui/window.ui:744
 msgid "Next Question"
 msgstr ""
 
-#: src/ui/window.ui:747
+#: src/ui/window.ui:746
 msgctxt "accessibility"
 msgid "Next Question"
 msgstr ""
 
-#: src/ui/window.ui:755
+#: src/ui/window.ui:754
 msgid "Last Question"
 msgstr ""
 
-#: src/ui/window.ui:757
+#: src/ui/window.ui:756
 msgctxt "accessibility"
 msgid "Last Question"
 msgstr ""
 
-#: src/ui/window.ui:798 src/ui/window.ui:856
+#: src/ui/window.ui:797 src/ui/window.ui:855
 msgctxt "Back to main screen"
 msgid "Back"
 msgstr ""
 
-#: src/ui/window.ui:800 src/ui/window.ui:858
+#: src/ui/window.ui:799 src/ui/window.ui:857
 msgctxt "accessibility"
 msgid "Back"
 msgstr ""
 
-#: src/ui/window.ui:834
+#: src/ui/window.ui:833
 msgctxt "TRANSLATORS: Only translate the text 'Downloading'"
 msgid "<span font-weight=\"bold\">Downloading</span>"
 msgstr ""
 
-#: src/ui/window.ui:941
+#: src/ui/window.ui:940
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/ui/window.ui:945
+#: src/ui/window.ui:944
 msgid "About Egghead"
 msgstr ""
