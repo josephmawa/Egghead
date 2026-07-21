@@ -11,8 +11,8 @@
     "lint-repo": "flatpak run --command=flatpak-builder-lint org.flatpak.Builder repo repo",
     "lint": "npm run build && npm run lint-manifest && npm run lint-appstream && npm run lint-builddir && npm run lint-repo",
     "init-build-dir": "flatpak run --command=meson --filesystem=host org.gnome.Sdk/x86_64/50 setup --wipe build-dir .",
-    "gen-pot": "flatpak run --command=meson --filesystem=host org.gnome.Sdk/x86_64/50 compile -C build-dir Egghead-pot",
-    "gen-translation-files": "flatpak run --command=meson --filesystem=host org.gnome.Sdk/x86_64/50 compile -C build-dir Egghead-update-po",
+    "gen-pot": "flatpak run --command=meson --filesystem=host org.gnome.Sdk/x86_64/50 compile -C build-dir egghead-pot",
+    "gen-translation-files": "flatpak run --command=meson --filesystem=host org.gnome.Sdk/x86_64/50 compile -C build-dir egghead-update-po",
     "rm-build-artifacts": "rm -rf .flatpak-builder builddir repo build-dir"
   },
   "repository": {
