@@ -4,7 +4,7 @@
   "description": "Simple quiz app",
   "main": "index.js",
   "scripts": {
-     "build": "flatpak run org.flatpak.Builder --force-clean --sandbox --user --install-deps-from=flathub --ccache --mirror-screenshots-url=https://dl.flathub.org/media/ --repo=repo builddir io.github.josephmawa.Egghead.json",
+    "build": "flatpak run org.flatpak.Builder --force-clean --sandbox --user --install-deps-from=flathub --ccache --mirror-screenshots-url=https://dl.flathub.org/media/ --repo=repo builddir io.github.josephmawa.Egghead.json",
     "lint-manifest": "flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest io.github.josephmawa.Egghead.json",
     "lint-appstream": "flatpak run --command=flatpak-builder-lint org.flatpak.Builder appstream data/io.github.josephmawa.Egghead.metainfo.xml.in",
     "lint-builddir": "flatpak run --command=flatpak-builder-lint org.flatpak.Builder builddir builddir",
