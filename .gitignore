@@ -1,3 +1,4 @@
+node_modules
 .flatpak-builder
 builddir
 build-dir
