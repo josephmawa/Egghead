@@ -1,9 +1,11 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
+# data/*
 data/io.github.josephmawa.Egghead.desktop.in
 data/io.github.josephmawa.Egghead.metainfo.xml.in
 data/io.github.josephmawa.Egghead.gschema.xml
 
+# src/*.js
 src/about.js
 src/application.js
 src/category.js
@@ -11,11 +13,13 @@ src/main.js
 src/preferences.js
 src/window.js
 
+# src/ui/*.ui
 src/ui/page.ui
 src/ui/preferences.ui
 src/ui/shortcuts-dialog.ui
 src/ui/window.ui
 
+# src/util/*.js
 src/util/data.js
 src/util/page.js
 src/util/quiz.js
