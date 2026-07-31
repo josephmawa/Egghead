@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/io/github/josephmawa/Egghead/js">
-    <file compressed="true">main.js</file>
-    <file compressed="true">window.js</file>
-    <file compressed="true">application.js</file>
     <file compressed="true">about.js</file>
+    <file compressed="true">application.js</file>
     <file compressed="true">category.js</file>
+    <file compressed="true">main.js</file>
     <file compressed="true">preferences.js</file>
+    <file compressed="true">window.js</file>
   </gresource>
   <gresource prefix="/io/github/josephmawa/Egghead/js">
     <file compressed="true">util/data.js</file>
-    <file compressed="true">util/utils.js</file>
     <file compressed="true">util/page.js</file>
     <file compressed="true">util/quiz.js</file>
+    <file compressed="true">util/utils.js</file>
   </gresource>
   <gresource prefix="/io/github/josephmawa/Egghead/js">
     <file compressed="true">lib/he.js</file>
