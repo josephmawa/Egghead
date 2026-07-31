@@ -1,6 +1,6 @@
 {
   "name": "egghead",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Simple quiz app",
   "main": "index.js",
   "scripts": {
