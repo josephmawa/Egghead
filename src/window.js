@@ -123,7 +123,7 @@ export const EggheadWindow = GObject.registerClass(
   class EggheadWindow extends Adw.ApplicationWindow {
     constructor(application) {
       super({ application });
-      this.quizStore = new Gio.ListStore(Quiz);
+      this.quizStore = Gio.ListStore.new(Quiz);
 
       this.createActions();
       this.createPaginationActions();
